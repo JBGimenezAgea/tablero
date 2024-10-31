@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarin - Reporte de Formatos</title>
+    <link rel="stylesheet" href="/tablero/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Clarin</h1>
+            <h2>Formatos - Clarin</h2>
+            <div class="date-range">
+                <span>1 sept 2024 - 30 sept 2024</span>
+            </div>
+        </header>
+
+        <section class="filters">
+            <img src="/tablero/prerroll_desktop-1.gif" alt="">
+            <button>Formatos</button>
+            <button>Unidad</button>
+            <button>Dispositivo</button>
+        </section>
+
+        <section class="overview">
+            <div class="stat">
+                <h3>Total de impresiones</h3>
+                <p>1,818.1 M</p>
+            </div>
+            <div class="stat">
+                <h3>Total de clics</h3>
+                <p>2,1 M</p>
+            </div>
+            <div class="stat">
+                <h3>CTR total</h3>
+                <p>0,11 %</p>
+            </div>
+            <div class="stat">
+                <h3>Vw(%)</h3>
+                <p>33,33</p>
+            </div>
+        </section>
+
+        <section class="tables">
+            <div class="table">
+                <h3>Categoría de dispositivo</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dispositivo</th>
+                            <th>Total de impresiones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smartphone</td>
+                            <td>1,077,575,682</td>
+                        </tr>
+                        <tr>
+                            <td>Desktop</td>
+                            <td>724,995,545</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>15,431,503</td>
+                        </tr>
+                        <tr>
+                            <td>Connected TV</td>
+                            <td>110,688</td>
+                        </tr>
+                        <tr>
+                            <td>Feature phone</td>
+                            <td>1,600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table">
+                <h3>Anunciante</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Anunciante</th>
+                            <th>Total de impresiones</th>
+                            <th>Total de clics</th>
+                            <th>CTR (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cementos Avellaneda SA</td>
+                            <td>329,257,827</td>
+                            <td>91,997</td>
+                            <td>0,03</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart">
+                <h3>Total de impresiones</h3>
+                <canvas id="impressionsChart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Total de clics</h3>
+                <canvas id="clicksChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/tablero/scripts.js"></script>
+</body>
+</html>
