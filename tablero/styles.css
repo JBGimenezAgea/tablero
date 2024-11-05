@@ -124,3 +124,73 @@ table th, table td {
     padding: 20px;
     border-radius: 8px;
 }
+
+.date-range {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff33;
+    padding: 5px 10px;
+    border-radius: 4px;
+    gap: 5px;
+}
+
+.date-range label {
+    color: #ffffff;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.date-range input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 10px;
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .overview {
+        flex-direction: column;
+    }
+
+    .tables {
+        flex-direction: column;
+    }
+
+    .charts {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header h1, .header h2 {
+        font-size: 1.2em;
+    }
+
+    .filters img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .stat, .table, .chart {
+        padding: 15px;
+    }
+}

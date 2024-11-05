@@ -26,3 +26,11 @@ new Chart(ctxClicks, {
         }]
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    flatpickr("#date-range-picker", {
+        mode: "range",
+        dateFormat: "d M Y",  
+        locale: "es"          
+    });
+});
